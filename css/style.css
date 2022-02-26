@@ -356,11 +356,11 @@ body {
   margin: auto;
 }
 
-.header {
+.navbar {
   background-color: #ffffff;
 }
 
-.header-top {
+.navbar-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -374,6 +374,11 @@ body {
   padding-bottom: 40px;
 }
 
+.navbar__search {
+  margin-right: auto;
+  margin-left: 108px;
+}
+
 .search {
   position: relative;
   display: -webkit-box;
@@ -382,8 +387,6 @@ body {
   overflow: hidden;
   border-radius: 6px;
   height: 40px;
-  margin-right: auto;
-  margin-left: 108px;
 }
 
 .search__input {
