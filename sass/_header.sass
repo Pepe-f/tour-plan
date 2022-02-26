@@ -6,6 +6,8 @@
     justify-content: space-between
     padding-top: 40px
     padding-bottom: 40px
+    &__menu-button
+      display: none
   &__search
     margin-right: auto
     margin-left: 108px
@@ -25,13 +27,13 @@
       text-decoration: none
       font-size: 14px
       line-height: 18px
+      font-weight: 700
 .search
   position: relative
   display: flex
   overflow: hidden
   border-radius: 6px
   height: 40px
-
   &__input
     background-color: #F5FAFE
     border: none
@@ -42,6 +44,7 @@
     line-height: 15px
     width: 350px
     height: 100%
+    color: $primaryTextColor
   &__button
     position: absolute
     top: 0
