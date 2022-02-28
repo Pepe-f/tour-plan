@@ -349,6 +349,7 @@ template {
 body {
   font-family: 'Mulish', sans-serif;
   color: #333333;
+  background-color: #F5FAFE;
 }
 
 .container {
@@ -535,7 +536,7 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
     border: none;
-    background-color: #fff;
+    background-color: #ffffff;
     cursor: pointer;
   }
   .menu-button__line {
