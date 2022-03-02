@@ -861,6 +861,7 @@ img {
   overflow: hidden;
   border-radius: 4px;
   height: 55px;
+  width: 355px;
 }
 
 .subscribe__input {
@@ -868,7 +869,7 @@ img {
   border: none;
   padding-left: 23px;
   padding-right: 75px;
-  width: 350px;
+  width: 100%;
   height: 100%;
   font-weight: 400;
   font-size: 12px;
@@ -907,7 +908,8 @@ img {
 }
 
 @media (max-width: 992px) {
-  .container {
+  .container,
+  .newsletter-wrapper {
     max-width: 700px;
   }
   .logo {
@@ -1041,11 +1043,28 @@ img {
   .map {
     width: 100%;
   }
+  .newsletter-wrapper {
+    max-width: 576px;
+    width: 92%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 
 @media (max-width: 576px) {
   .logo {
     width: 99px;
+  }
+  .newsletter {
+    padding: 76px 0 83px 0;
+  }
+  .subscribe {
+    width: 100%;
   }
 }
 
