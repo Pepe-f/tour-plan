@@ -13,3 +13,5 @@ const swiper = new Swiper('.swiper', {
     onlyInViewport: true,
   },
 });
+
+$('.newsletter').parallax({imageSrc: '../img/newsletter-bg.jpg', speed: 0.7});
