@@ -13,6 +13,12 @@
   .card
     width: 225px
     height: 225px
+  .footer
+    &__input
+      flex-basis: 100%
+
+    &-bottom__ul
+      padding: 0
 
 @media (max-width: 992px)
   .container,
@@ -64,6 +70,69 @@
     width: 340px
     height: 255px
     margin-bottom: 20px
+  .footer
+    padding: 73px 0 33px
+
+    &-wrapper
+      grid-template-columns: repeat(6, 1fr)
+      grid-row-gap: 40px
+
+    &__input
+      flex-basis: 47%
+
+    &__logo
+      grid-row: 1 / 2
+      grid-column: span 2
+
+    &__social
+      &-network
+        grid-row: 1 / 2
+        grid-column: span 4
+        align-self: center
+
+    &__categories
+      grid-row: 2 / 3
+      grid-column: span 2
+
+    &__legal
+      grid-column: span 2
+
+    &__additional
+      grid-column: span 2
+      display: grid
+      justify-content: flex-end
+
+    &__contact
+      &-details
+        grid-row: 3
+        grid-column: span 5
+
+      &-form
+        grid-row: 4
+        grid-column: span 5
+        max-width: 540px
+
+    &__title
+      white-space: nowrap
+
+    &__logo
+      width: 100px
+
+    &__legal
+      display: block
+
+      &-image
+        grid-column: span 3
+        grid-row: 5
+
+    &__top
+      margin-bottom: 54px
+
+    &-bottom
+      grid-template-columns: 1fr 1fr
+
+      &__ul
+        grid-column: 1
 
 @media (max-width: 768px)
   .container
@@ -147,6 +216,23 @@
       line-height: 23px
   .card
     width: 49%
+  .footer
+    &__input
+      flex-basis: 100%
+
+    &__title
+      white-space: normal
+
+    &__top
+      margin-bottom: 30px
+
+    &-bottom
+      &__image
+        justify-content: flex-start
+        grid-row: 3
+
+      &__ul
+        grid-column: span 2
 
 @media (max-width: 576px)
   .logo
@@ -157,6 +243,63 @@
     width: 100%
   .card
     width: 100%
+  .footer
+    &-wrapper
+      grid-template-columns: 1fr
+      grid-row-gap: 33px
+
+    &__logo
+      grid-row: 1
+      grid-column: 1
+
+    &__social
+      &-network
+        grid-row: 2
+        grid-column: 1
+        flex-direction: column
+        align-items: flex-start
+
+    &__additional
+      grid-row: 4
+      grid-column: 1
+
+    &__categories
+      grid-row: 5
+      grid-column: 1
+
+    &__legal
+      grid-row: 3
+      grid-column: 1
+
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+
+      &-form
+        grid-row: 7
+        grid-column: 1
+
+    &__info
+      flex-basis: 100%
+      margin-bottom: 15px
+
+    &__button
+      order: 2
+
+    &__message
+      width: 100%
+
+    &__icon
+      &-wrapper
+        min-width: 30px
+
+    &__title
+      &--inline
+        margin-bottom: 22px
+
+    &__additional
+      justify-content: flex-start
 
 @media (max-width: 320px)
   .hotel
